@@ -144,6 +144,7 @@ body {
 .hero {
     padding: 8rem 0 4rem;
     background: linear-gradient(135deg, #fef2f2 0%, #ffffff 50%, #fef2f2 100%);
+    padding-top: 10rem; /* Added padding to accommodate fixed navbar */
 }
 
 .hero-content {
@@ -236,10 +237,15 @@ body {
 .image-container {
     position: relative;
     z-index: 10;
+    /* Ensure image container doesn't distort the image */
+    width: 100%;
+    max-width: 400px; /* Match profile-image max-width */
+    margin: 0 auto; /* Center the image */
 }
 
 .profile-image {
     width: 100%;
+    height: auto; /* Added auto to maintain aspect ratio */
     max-width: 400px;
     border-radius: 1rem;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -656,6 +662,11 @@ body {
         width: 100%;
         max-width: 300px;
     }
+    
+    .img img {
+        width: 150px; /* Adjusted size for smaller screens */
+        height: 150px; /* Adjusted size for smaller screens */
+    }
 }
 
 @media (max-width: 480px) {
@@ -665,6 +676,7 @@ body {
     
     .hero {
         padding: 6rem 0 3rem;
+        padding-top: 10rem; /* Added padding to accommodate fixed navbar */
     }
     
     .hero-title {
