@@ -14,6 +14,7 @@ body {
     line-height: 1.6;
     color: #1f2937;
     background-color: #ffffff;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
 }
 
 .container {
@@ -621,6 +622,11 @@ body {
     
     .mobile-menu.active {
         display: flex;
+        flex-direction: column; /* Ensure vertical stacking */
+        width: 100%; /* Make sure it takes full width */
+        position: absolute; /* Positioning correctly */
+        top: 100%;
+        left: 0;
     }
     
     .hero-title {
@@ -672,6 +678,8 @@ body {
     
     .mobile-link {
         font-size: 1rem; /* Ajusta este valor si es necesario */
+        width: 100%; /* Ensure links take full width for easier tapping */
+        text-align: center; /* Center text */
     }
 }
 
@@ -691,10 +699,6 @@ body {
     
     .section-title {
         font-size: 2rem;
-    }
-    
-    .hero-description {
-        font-size: 1.125rem;
     }
     
     .section-description {
