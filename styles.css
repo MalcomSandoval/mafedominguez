@@ -666,6 +666,8 @@ body {
     .img img {
         width: 150px; /* Adjusted size for smaller screens */
         height: 150px; /* Adjusted size for smaller screens */
+        object-fit: cover; /* Ensure the image covers the area */
+        border-radius: 50%; /* Keep it circular */
     }
 }
 
@@ -694,6 +696,11 @@ body {
     .section-description {
         font-size: 1.125rem;
     }
+
+    .img img {
+        width: 120px; /* Further adjusted size for very small screens */
+        height: 120px; /* Further adjusted size for very small screens */
+    }
 }
 .img{
     display: flex;
@@ -702,7 +709,7 @@ body {
 }
 .img img{
     width: 200px;      /* Puedes ajustar el tamaño */
-    height: 200px;
+    height: auto; /* Cambiado a auto para mantener la proporción */
     object-fit: cover;
     border-radius: 50%;
     border: 5px solid red;
