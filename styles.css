@@ -669,6 +669,10 @@ body {
         object-fit: cover; /* Ensure the image covers the area */
         border-radius: 50%; /* Keep it circular */
     }
+    
+    .mobile-link {
+        font-size: 1rem; /* Ajusta este valor si es necesario */
+    }
 }
 
 @media (max-width: 480px) {
